@@ -1,4 +1,4 @@
-package cn.diyai.algorithmics;
+package cn.diyai.tree;
 
 import junit.framework.TestCase;
 
@@ -6,6 +6,11 @@ import java.util.ArrayList;
 
 public class BinaryHelper extends TestCase {
 
+	/**
+	 * 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
+	 * @param n
+	 * @return
+	 */
 	public int NumberOf1(int n) {
 		int count = 0;
 		String str = Integer.toBinaryString(n);
@@ -20,32 +25,14 @@ public class BinaryHelper extends TestCase {
 		return count;
 	}
 
+	/**
+	 * 给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。
+	 */
 	public double Power(double base, int exponent) {
 		return Math.pow(base, exponent);
 	}
 
-	public void reOrderArray(int[] array) {
-		if (array.length == 0) {
-			return;
-		}
 
-		ArrayList<Integer> evenList = new ArrayList<Integer>();
-		ArrayList<Integer> oddList = new ArrayList<Integer>();
-		for (int i = 0; i < array.length; i++) {
-			int val = array[i];
-			if (val % 2 == 0) {
-				evenList.add(val);
-			} else {
-				oddList.add(val);
-			}
-		}
-
-		oddList.addAll(evenList);
-
-		for (int i = 0; i < array.length; i++) {
-			array[i] = oddList.get(i);
-		}
-	}
 
 	public static void main(String[] args) {
 		BinaryHelper binaryHelper = new BinaryHelper();
@@ -54,8 +41,7 @@ public class BinaryHelper extends TestCase {
 
 		System.out.println(binaryHelper.Power(3.0001, 4));
 
-		binaryHelper.reOrderArray(new int[] { 1, 2, 3, 4, 5 });
-		binaryHelper.reOrderArray(new int[] {});
+
 
 	}
 

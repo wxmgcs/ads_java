@@ -1,10 +1,14 @@
-package cn.diyai.algorithmics;
+package cn.diyai.linklist;
 
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
 import java.util.Stack;
 
+/**
+ * 输入一个链表，从尾到头打印链表每个节点的值。
+ 参考：http://blog.csdn.net/u013238950/article/details/50786330 http://blog.csdn.net/a19881029/article/details/22695289
+ */
 public class LinkedList extends TestCase {
 	public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 
@@ -58,7 +62,12 @@ public class LinkedList extends TestCase {
 		}
 		listNodeLast = data;
 	}
-	
+
+	/**
+	 * 输入一个链表，反转链表后，输出链表的所有元素。
+	 * @param head
+	 * @return
+	 */
 	public ListNode ReverseList(ListNode head) {
 		if (head == null || head.next == null) {  
             return head;

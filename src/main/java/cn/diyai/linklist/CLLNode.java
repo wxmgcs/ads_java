@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.linklist;
+package cn.diyai.linklist;
 
 /**
  * Created by diyai on 2018/2/10.

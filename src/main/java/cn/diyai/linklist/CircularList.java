@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.linklist;
+package cn.diyai.linklist;
 /**
  * 循环链表
  * @author wangxiaomin

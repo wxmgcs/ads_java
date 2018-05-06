@@ -14,15 +14,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <netty.version>4.1.16.Final</netty.version>
-        <version.jackson.core>2.6.3</version.jackson.core>
-        <dubbo.version>2.8.4</dubbo.version>
-        <servlet.version>3.1.0</servlet.version>
-        <spring.boot.version>1.2.5.RELEASE</spring.boot.version>
-        <zkclient.version>0.1</zkclient.version>
-        <dubbo.demo.version>0.0.1-SNAPSHOT</dubbo.demo.version>
-        <commons.lang3.version>3.1</commons.lang3.version>
-        <curator_version>2.5.0</curator_version>
     </properties>
 
     <dependencies>
@@ -30,18 +21,9 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <version>4.4</version>
+            <scope>provided</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.13.1</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
     <build>
         <plugins>

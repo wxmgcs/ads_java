@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.linklist;
+package cn.diyai.linklist;
 /**
  * 双向链表
  * @author wangxiaomin

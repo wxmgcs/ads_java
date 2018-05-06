@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.recursion;
+package cn.diyai.recursion;
 
 /**
  * 递归

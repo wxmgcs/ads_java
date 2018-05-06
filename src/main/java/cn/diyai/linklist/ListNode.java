@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.linklist;
+package cn.diyai.linklist;
 
 /**
  * 单向链表

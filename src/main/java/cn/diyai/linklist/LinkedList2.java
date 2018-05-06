@@ -1,4 +1,4 @@
-package cn.diyai.algorithmics;
+package cn.diyai.linklist;
 
 public class LinkedList2 {
 	private class Data{

@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.linklist;
+package cn.diyai.linklist;
 
 public class ArrayStack {
 	public boolean isEmpty(){

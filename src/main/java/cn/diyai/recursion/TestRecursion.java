@@ -1,4 +1,4 @@
-package cn.diyai.datastructures.recursion;
+package cn.diyai.recursion;
 
 public class TestRecursion {
     public static void main(String[] args){
