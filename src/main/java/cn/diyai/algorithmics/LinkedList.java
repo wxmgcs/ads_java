@@ -1,0 +1,112 @@
+package cn.diyai.algorithmics;
+
+import junit.framework.TestCase;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class LinkedList extends TestCase {
+	public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+
+		ArrayList<Integer> list = new ArrayList<>();
+
+		if (listNode == null) {
+			return list;
+		}
+
+		ListNode cur = listNode;
+		Stack<ListNode> stack = new Stack<ListNode>();
+
+		while (cur != null) {
+			stack.push(cur);
+			cur = cur.next;
+		}
+
+		while (!stack.isEmpty()) {
+			list.add(stack.pop().val);
+		}
+
+		return list;
+
+	}
+
+	class ListNode {
+		int val;
+		ListNode next = null;
+
+		ListNode(int val) {
+			this.val = val;
+		}
+	}
+
+	private ListNode listNodeFirst = null;
+	private ListNode listNodeLast = null;
+
+	public void insertFirst(int val) {
+		ListNode data = new ListNode(val);
+		data.next = listNodeFirst;
+		listNodeFirst = data;
+	}
+
+	public void insertLast(int val) {
+		ListNode data = new ListNode(val);
+		if (listNodeLast == null) {
+			listNodeLast = data;
+		} else {
+			listNodeLast.next = data;
+
+		}
+		listNodeLast = data;
+	}
+	
+	public ListNode ReverseList(ListNode head) {
+		if (head == null || head.next == null) {  
+            return head;
+        }  
+		
+		ListNode reHead = null;
+		while (head != null) {
+			ListNode data = new ListNode(head.val);
+			data.next = reHead;
+			reHead = data;
+			head = head.next;
+		}
+		
+		return reHead;
+
+    }
+
+	public static void main(String[] args) {
+		LinkedList ll = new LinkedList();
+
+//		ll.insertFirst(67);
+//		ll.insertFirst(0);
+//		ll.insertFirst(24);
+//		ll.insertFirst(58);
+
+		// ll.insertLast(67);
+		// ll.insertLast(0);
+		// ll.insertLast(24);
+		// ll.insertLast(58);
+		System.out.println("-- {58,24,0,67} --");
+		System.out.println("-- printListFromTailToHead --");
+		ArrayList<Integer> arr = printListFromTailToHead(ll.listNodeFirst);
+		// ArrayList<Integer> arr2 = (ArrayList<Integer>)
+		// Arrays.asList(1,2,3,4);
+		// assertEquals(arr2, arr);
+		for (int i = 0; i < arr.size(); i++) {
+			System.out.println(arr.get(i));
+		}
+
+		// assertEquals(null, printListFromTailToHead(null));
+		System.out.println("-- ReverseList --");
+		ListNode reverseList = ll.ReverseList(ll.listNodeFirst);
+		while (reverseList != null) {
+			System.out.println(reverseList.val);
+			reverseList = reverseList.next;
+		}
+		
+
+	}
+
+}
