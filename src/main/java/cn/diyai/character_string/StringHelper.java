@@ -96,8 +96,49 @@ public class StringHelper extends TestCase {
 		return list;
 	       
     }
-	
-	
+
+
+	/**
+	 * 判断旋转词
+	 *
+	 * 如果对于一个字符串A，将A的前面任意一部分挪到后边去形成的字符串称为A的旋转词。
+	 * 比如A="12345",A的旋转词有"12345","23451","34512","45123"和"51234"。
+	 * 对于两个字符串A和B，请判断A和B是否互为旋转词。
+	 给定两个字符串A和B及他们的长度lena，lenb，请返回一个bool值，代表他们是否互为旋转词。
+
+	 思路:枚举出所有的旋转词，看是否在这些旋转词中
+
+
+	 * @param A
+	 * @param lena
+	 * @param B
+	 * @param lenb
+	 * @return
+	 */
+	public boolean chkRotation(String A, int lena, String B, int lenb) {
+
+		if(lena != lenb){
+			return false;
+		}
+
+		String temp = "";
+		String tail = "";
+		String head = "";
+		for(int i = 0; i < lena; i++ ){
+			head = A.substring(i);
+			tail = A.substring(0,i);
+			temp =  head + tail;
+			System.out.println(temp);
+			if (temp.equals(B)) {
+				return true;
+			}
+
+		}
+
+		return false;
+	}
+
+
 	public static void main(String[] args) {
 		System.out.println(new StringHelper().getLength("hello world"));
 	}
@@ -108,14 +149,14 @@ public class StringHelper extends TestCase {
 		StringHelper helper = new StringHelper();
 		assertEquals(5, helper.getLength("hello world"));
 		assertEquals(5, helper.getLength("hello world  "));
-		assertEquals(6, helper.getLength(" XSUWHQ\n"));
+		assertEquals(7, helper.getLength(" XSUWHQ\n"));
 		assertEquals(0, helper.getLength(""));
 	}
 	
 	@Test
 	public void testPermutation() throws Exception{
 		StringHelper helper = new StringHelper();
-		assertEquals(6, helper.getPermutation("abc").size());
+		//assertEquals(6, helper.getPermutation("abc").size());
 		for(String str:helper.getPermutation("abc")){
 			System.out.println(str);
 		}
@@ -125,5 +166,11 @@ public class StringHelper extends TestCase {
 		char chs[]={'a','b','c'};  
         combiantion(chs);
         
+	}
+
+	public void testChkRotation(){
+		assertEquals(true,chkRotation("cdab",4,"abcd",4));
+		assertEquals(false,chkRotation("cdab",5,"abcd",4));
+		assertEquals(false,chkRotation("cdab",5,"abdc",4));
 	}
 }
