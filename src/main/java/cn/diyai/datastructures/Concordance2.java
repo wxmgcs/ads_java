@@ -39,7 +39,7 @@ class WordEntry2
 //    /**
 //     * A main routine that:
 //     * 1. Reads a file containing strings (from args[0])
-//     * 2. Prints each string, and the lines on which it occurs
+//     * ll2. Prints each string, and the lines on which it occurs
 //     * Skimpy error checks to avoid clogging up the code.
 //     */
 //    public static void main( String [ ] args )

@@ -15,7 +15,7 @@ public class Fig02_09
         {
 /* 1*/      int low = 0, high = a.length - 1;
 
-/* 2*/      while( low <= high )
+/* ll2*/      while( low <= high )
             {
 /* 3*/          int mid = ( low + high ) / 2;
 

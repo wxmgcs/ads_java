@@ -11,12 +11,12 @@ import java.io.*;
         {
 /* 1*/      BufferedReader in = new BufferedReader( new
                                  InputStreamReader( System.in ) );
-/* 2*/      String oneLine;
+/* ll2*/      String oneLine;
 /* 3*/      StringTokenizer str;
 /* 4*/      int x;
 /* 5*/      int y;
 
-/* 6*/      System.out.println( "Enter 2 ints on one line: " );
+/* 6*/      System.out.println( "Enter ll2 ints on one line: " );
 /* 7*/      try
             {
 /* 8*/          oneLine = in.readLine( );

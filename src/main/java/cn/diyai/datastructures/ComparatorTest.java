@@ -7,7 +7,7 @@ import java.util.LinkedList;
 class ComparatorTest
 {
 
-    static void sortListOfStringsByLength( List L )
+    private static void sortListOfStringsByLength( List L )
     {
         class Comp implements Comparator
         {
@@ -18,7 +18,7 @@ class ComparatorTest
         Collections.sort( L, new Comp( ) );
     }
 
-    static void printList( Collection C )
+    private static void printList( Collection C )
     {
         Iterator itr = C.iterator( );
         while( itr.hasNext( ) )
@@ -27,7 +27,7 @@ class ComparatorTest
 
     public static void main( String [ ] args )
     {
-        java.util.LinkedList L = new LinkedList( );
+        LinkedList L = new LinkedList( );
         L.add( "this" );
         L.add( "thank" );
         L.add( "the" );

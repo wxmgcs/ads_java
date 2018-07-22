@@ -44,6 +44,7 @@ Algorithms and Data Structures
 - 合并两个排序的链表
 - 有序链表 
 - 迭代器
+- 游标的使用 cn.diyai.linklist.CursorList
 
 
 #### 树
@@ -63,10 +64,17 @@ Algorithms and Data Structures
 - 树的子结构
 - 二叉树的镜像
 - 树的遍历算法
-- 红黑树
+- 红黑树 cn.diyai.tree.RedBlackTree
+- 自平衡二叉查找树 cn.diyai.tree.AATree
 - 2-3-4树
+- 伸展树 cn.diyai.tree.SplayTree
+- 二叉树 cn.diyai.tree.BinarySearchTree
+- 平衡搜索树 cn.diyai.tree.AvlTree
+- k-d树 cn.diyai.tree.KdTree
+- 二叉搜索树 cn.diyai.tree.Treap
 
 #### 栈
+
 
 
 #### 队列
@@ -78,6 +86,9 @@ Algorithms and Data Structures
 
 #### 堆 
 - 堆排序
+- Pairing Heap  cn.diyai.heap.PairHeap
+- BinaryHeap cn.diyai.heap.BinaryHeap
+- LeftistHeap  cn.diyai.heap.LeftistHeap
 
 
 ####数组
@@ -109,10 +120,13 @@ Algorithms and Data Structures
 - 有向图的连通性
 - 带权图
 
+#### 并查集ADT
+- DisjSets cn.diyai.adt.DisjSets
 
 ####哈希表
-- 开放地址法
+- 开放地址法 cn.diyai.hashtable.QuadraticProbingHashTable
 - 链地址法
+- 分离链接法 cn.diyai.hashtable.SeparateChainingHashTable
 
 
 #### 排序  
@@ -136,7 +150,7 @@ Algorithms and Data Structures
 
 
 #### 其他
-并查集ADT 
+
 图算法 
 
 选择算法-中位数 

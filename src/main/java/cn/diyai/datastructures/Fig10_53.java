@@ -23,7 +23,7 @@ public class Fig10_53
 
             // Initialize d and path
 /* 1*/      for( int i = 0; i < n; i++ )
-/* 2*/          for( int j = 0; j < n; j++ )
+/* ll2*/          for( int j = 0; j < n; j++ )
                 {
 /* 3*/              d[ i ][ j ] = a[ i ][ j ];
 /* 4*/              path[ i ][ j ] = NOT_A_VERTEX;

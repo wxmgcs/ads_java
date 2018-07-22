@@ -101,7 +101,7 @@ public class LinkedList extends TestCase {
 		System.out.println("-- printListFromTailToHead --");
 		ArrayList<Integer> arr = printListFromTailToHead(ll.listNodeFirst);
 		// ArrayList<Integer> arr2 = (ArrayList<Integer>)
-		// Arrays.asList(1,2,3,4);
+		// Arrays.asList(1,ll2,3,4);
 		// assertEquals(arr2, arr);
 		for (int i = 0; i < arr.size(); i++) {
 			System.out.println(arr.get(i));

@@ -5,7 +5,9 @@ package cn.diyai.datastructures;
      * Thus, I haven't bothered testing it exhaustively.
      */
 
-    public class Polynomial
+import cn.diyai.exception.Overflow;
+
+public class Polynomial
     {
         public static final int MAX_DEGREE = 100;
 

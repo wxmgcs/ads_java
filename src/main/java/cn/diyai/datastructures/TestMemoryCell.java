@@ -7,7 +7,7 @@ public class TestMemoryCell
             MemoryCell m = new MemoryCell( );
 
 /* 1*/      m.write( new Integer( 5 ) );
-/* 2*/      System.out.println( "Contents are: " +
+/* ll2*/      System.out.println( "Contents are: " +
 /* 3*/                          ( (Integer) m.read( ) ).intValue( ) );
         }
     }

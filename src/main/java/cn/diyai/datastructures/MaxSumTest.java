@@ -10,7 +10,7 @@ public final class MaxSumTest
         {
 /* 1*/      int maxSum = 0;
 
-/* 2*/      for( int i = 0; i < a.length; i++ )
+/* ll2*/      for( int i = 0; i < a.length; i++ )
 /* 3*/          for( int j = i; j < a.length; j++ )
                 {
 /* 4*/              int thisSum = 0;
@@ -35,7 +35,7 @@ public final class MaxSumTest
         {
 /* 1*/      int maxSum = 0;
 
-/* 2*/      for( int i = 0; i < a.length; i++ )
+/* ll2*/      for( int i = 0; i < a.length; i++ )
             {
 /* 3*/          int thisSum = 0;
 /* 4*/          for( int j = i; j < a.length; j++ )
@@ -60,7 +60,7 @@ public final class MaxSumTest
         private static int maxSumRec( int [ ] a, int left, int right )
         {
 /* 1*/      if( left == right )  // Base case
-/* 2*/          if( a[ left ] > 0 )
+/* ll2*/          if( a[ left ] > 0 )
 /* 3*/              return a[ left ];
                 else
 /* 4*/              return 0;
@@ -115,7 +115,7 @@ public final class MaxSumTest
         {
 /* 1*/      int maxSum = 0, thisSum = 0;
 
-/* 2*/      for( int j = 0; j < a.length; j++ )
+/* ll2*/      for( int j = 0; j < a.length; j++ )
             {
 /* 3*/          thisSum += a[ j ];
 

@@ -7,11 +7,13 @@
     //
     // ******************PUBLIC OPERATIONS*********************
     //     Return a random number according to some distribution:
-    // int randomInt( )                     --> Uniform, 1 to 2^31-1
+    // int randomInt( )                     --> Uniform, 1 to ll2^31-1
     // int random0_1( )                     --> Uniform, 0 to 1
     // int randomInt( int low, int high )   --> Uniform low..high
     // long randomLong( long low, long high ) --> Uniform low..high
     // void permute( Object [ ] a )         --> Randomly permutate
+
+    import cn.diyai.sort.Sort;
 
     /**
      * Random number class, using a 31-bit
