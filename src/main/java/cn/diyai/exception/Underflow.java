@@ -6,6 +6,5 @@ package cn.diyai.exception;
  * @author Mark Allen Weiss
  * 下溢
  */
-public class Underflow extends Exception
-{
+public class Underflow extends Exception {
 }

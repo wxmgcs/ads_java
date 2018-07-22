@@ -83,6 +83,9 @@ Algorithms and Data Structures
 - 用两个栈实现队列 cn.diyai.queue.Queue
 - 包含min函数的栈
 - 优先队列
+- 基于数组的队列 cn.diyai.queue.ArrayQueue
+- 基于动态循环素组实现队列
+- 基于链表实现队列
 
 #### 堆 
 - 堆排序
