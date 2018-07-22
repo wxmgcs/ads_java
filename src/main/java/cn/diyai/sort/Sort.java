@@ -168,7 +168,7 @@ public final class Sort
      * Quicksort algorithm.
      * @param a an array of Comparable items.
      */
-    public static void quicksort( java.lang.Comparable[ ] a )
+    public static void quicksort( Comparable[ ] a )
     {
         quicksort( a, 0, a.length - 1 );
     }

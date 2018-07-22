@@ -1,4 +1,4 @@
-package cn.diyai.algorithmics.sort;
+package cn.diyai.sort;
 
 import junit.framework.TestCase;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * 冒泡排序
  */
-public class BubbleSort extends TestCase {
+public class BubbleSort2 extends TestCase {
 
     /**
      * 对于一个int数组，请编写一个冒泡排序算法，对数组元素排序。

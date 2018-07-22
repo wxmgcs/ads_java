@@ -2,8 +2,10 @@ package cn.diyai.tree;
 
 import junit.framework.TestCase;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
@@ -101,6 +103,46 @@ public class BinaryTree  {
 		return null;
 
 	}
+
+	/**
+	 * 有一棵二叉树，请设计一个算法，按照层次打印这棵二叉树。
+	 给定二叉树的根结点root，请返回打印结果，结果按照每一层一个数组进行储存，所有数组的顺序按照层数从上往下，
+	 且每一层的数组内元素按照从左往右排列。保证结点数小于等于500。
+	 * @param root
+	 * @return
+	 */
+	public int[][] printTree(TreeNode root) {
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		if (root == null) {
+			return null;
+		}
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		queue.offer(root);
+		while (!queue.isEmpty()) {
+			int size = queue.size();
+			res.add(new ArrayList<Integer>());
+			for (int i = 0; i < size; i++) {
+				TreeNode node = queue.poll();
+				res.get(res.size() - 1).add(node.val);
+				if (node.left != null) {
+					queue.offer(node.left);
+				}
+				if (node.right != null) {
+					queue.offer(node.right);
+				}
+			}
+		}
+		int[][] ans = new int[res.size()][];
+		for (int i = 0; i < res.size(); i++) {
+			ans[i] = new int[res.get(i).size()];
+			for (int j = 0; j < res.get(i).size(); j++) {
+				ans[i][j] = res.get(i).get(j);
+			}
+		}
+		return ans;
+	}
+
+
 
 	//{1,ll2,4,7,3,5,6,8}和中序遍历序列{4,7,ll2,1,5,3,8,6}
 	public static void main(String[] args) {

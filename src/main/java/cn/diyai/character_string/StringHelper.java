@@ -107,8 +107,6 @@ public class StringHelper extends TestCase {
 	 给定两个字符串A和B及他们的长度lena，lenb，请返回一个bool值，代表他们是否互为旋转词。
 
 	 思路:枚举出所有的旋转词，看是否在这些旋转词中
-
-
 	 * @param A
 	 * @param lena
 	 * @param B

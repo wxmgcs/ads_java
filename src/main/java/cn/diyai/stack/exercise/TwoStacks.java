@@ -14,7 +14,6 @@ import java.util.*;
 
 public class TwoStacks {
     public ArrayList<Integer> twoStacksSort(int[] numbers) {
-        // write code here
         ArrayList<Integer> list = new ArrayList<>();
         int num;
         int i = numbers.length - 1;
@@ -33,15 +32,8 @@ public class TwoStacks {
         }
         return list;
     }
-}
 
-
-
-import java.util.*;
-
-public class TwoStacks {
-    public ArrayList<Integer> twoStacksSort(int[] numbers) {
-        // write code here
+    public ArrayList<Integer> twoStacksSort2(int[] numbers) {
         int[] stack = new int[numbers.length];
         int num;
         int m = numbers.length - 1; // index of numbers array

@@ -9,14 +9,15 @@ Algorithms and Data Structures
 - 《Java数据结构和算法.（中文第二版）》
 - 《算法导论中文版》
 - 《剑指Offer》
+- https://github.com/XingxingHuang/Code_Practice/tree/master/nowcoder 练习题
 
 
 学习进度
 ####递归
 - 递归 cn.diyai.recursion.Recursion
 - 斐波那契数列
-- 跳台阶
-- 变态跳台阶
+- 跳台阶 cn.diyai.algorithmics.JumpTool
+- 变态跳台阶  
 - 矩形覆盖
 - 三角数字
 - 阶乘
@@ -136,15 +137,17 @@ Algorithms and Data Structures
 
 
 #### 排序  
- - 归并排序
- - 快速排序
- - 冒泡排序 cn.diyai.algorithmics.sort.BubbleSort 
- - 选择排序
- - 插入排序
+ - 归并排序 cn.diyai.sort.MergeSort
+ - 自底向上的归并排序 cn.diyai.sort.MergeSortBU
+ - 快速排序 cn.diyai.sort.QuickSort
+ - 冒泡排序 cn.diyai.sort.BubbleSort / cn.diyai.sort.BubbleSort2
+ - 选择排序 cn.diyai.sort.SelectionSort
+ - 插入排序 cn.diyai.sort.InsertionSort
  - 对象排序
- - 希尔排序
- - 基数排序
- - 
+ - 希尔排序 cn.diyai.sort.ShellSort
+ - 基数排序 cn.diyai.sort.RadixSort
+ - 计数排序  cn.diyai.sort.CountingSort
+ - 堆排序  cn.diyai.sort.HeapSort
 
 
 #### 查找
