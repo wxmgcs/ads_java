@@ -74,6 +74,7 @@ Algorithms and Data Structures
 - 二叉搜索树 cn.diyai.tree.Treap
 
 #### 栈
+- 中缀表达式转后缀表达式 cn.diyai.stack.InToPost
 
 
 
@@ -82,10 +83,12 @@ Algorithms and Data Structures
 - 栈的压入、弹出序列
 - 用两个栈实现队列 cn.diyai.queue.Queue
 - 包含min函数的栈
-- 优先队列
+- 优先队列 cn.diyai.queue.PriorityQueue
 - 基于数组的队列 cn.diyai.queue.ArrayQueue
 - 基于动态循环素组实现队列
 - 基于链表实现队列
+- 简单队列，使用nItems表示当前指针 cn.diyai.queue.Queue2
+- 简单队列，没使用nItems表示当前指针 cn.diyai.queue.Queue3
 
 #### 堆 
 - 堆排序
