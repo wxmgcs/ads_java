@@ -2,7 +2,7 @@ package cn.diyai.character_string;
 
 public class BFMatch {
 
-    static int bfMatch(String target, String pattern) {
+    private static int bfMatch(String target, String pattern) {
         int pos = -1;
         int i = 0, j = 0, k = 0;
 
