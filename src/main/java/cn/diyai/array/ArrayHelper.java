@@ -1,13 +1,14 @@
 package cn.diyai.array;
 
-import junit.framework.TestCase;
+import junit.framework.Assert;
+import org.junit.Test;
 
 /**
  * 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
  输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,ll2}为{1,ll2,3,4,5}的一个旋转，该数组的最小值为1。
  NOTE：给出的所有元素都大于0，若数组大小为0，请返回0. 思路：默认以数组第一个元素为最小值
  */
-public class ArrayHelper extends TestCase {
+public class ArrayHelper  {
 
 	public int minNumberInRotateArray(int[] array) {
 		if (array.length == 0) {
@@ -20,15 +21,16 @@ public class ArrayHelper extends TestCase {
 				min = array[i];
 			}
 		}
-		
+
 		return min;
 	}
 
-	public static void main(String[] args) {
+	@Test
+	public void test() {
 		ArrayHelper arrayHelper = new ArrayHelper();
-		assertEquals(1, arrayHelper.minNumberInRotateArray(new int[] { 3, 4, 5, 1, 2 }));
-		assertEquals(0, arrayHelper.minNumberInRotateArray(new int[] {}));
-		assertEquals(3, arrayHelper.minNumberInRotateArray(new int[] { 3 }));
+		Assert.assertEquals(1, arrayHelper.minNumberInRotateArray(new int[] { 3, 4, 5, 1, 2 }));
+		Assert.assertEquals(0, arrayHelper.minNumberInRotateArray(new int[] {}));
+		Assert.assertEquals(3, arrayHelper.minNumberInRotateArray(new int[] { 3 }));
 
 	}
 
