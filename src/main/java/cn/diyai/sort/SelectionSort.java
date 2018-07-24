@@ -13,7 +13,7 @@ import java.util.Arrays;
  [1,2,3,5,2,3],6
  [1,2,2,3,3,5]
  */
-public class SelectionSort {
+public class SelectionSort extends Sort{
     public int[] selectionSort(int[] A, int n) {
         for (int i = 0; i < n; i++) {
             int min = i;
@@ -35,7 +35,12 @@ public class SelectionSort {
 
     @Test
     public void test(){
-        Assert.assertEquals(Arrays.toString(selectionSort(new int[]{1,2,3,5,2,3},6)),
-                Arrays.toString(new int[]{1,2,2,3,3,5}));
+        Assert.assertEquals(true,
+                super.check());
+    }
+
+    @Override
+    public int[] exec(int[] arr, int len) {
+        return selectionSort(arr,len);
     }
 }

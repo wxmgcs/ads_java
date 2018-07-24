@@ -59,7 +59,6 @@ public class FindItem extends TestCase{
 	 * @return
 	 */
 	public int findPos(int[] arr, int n) {
-		// write code here
 		for(int i = 0; i < n;i++){
 			if(arr[i] > i){
 				return -1;

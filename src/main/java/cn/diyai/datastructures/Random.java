@@ -13,7 +13,7 @@
     // long randomLong( long low, long high ) --> Uniform low..high
     // void permute( Object [ ] a )         --> Randomly permutate
 
-    import cn.diyai.sort.Sort;
+    import cn.diyai.sort.Sort2;
 
     /**
      * Random number class, using a 31-bit
@@ -128,7 +128,7 @@
             Random r = new Random( );
 
             for( int j = 1; j < a.length; j++ )
-                Sort.swapReferences( a, j, r.randomInt( 0, j ) );
+                Sort2.swapReferences( a, j, r.randomInt( 0, j ) );
         }
 
         private int state;
