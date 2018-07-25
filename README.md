@@ -139,8 +139,11 @@ Algorithms and Data Structures
 
 
 #### 排序  
- - 归并排序 cn.diyai.sort.MergeSort
- - 自底向上的归并排序 cn.diyai.sort.MergeSortBU
+ - 归并排序 cn.diyai.sort.mergesort.MergeSort/MergeSort2/MergeSort3
+ - 原地归并排序
+ - 自底向上的归并排序 cn.diyai.sort.mergesort.MergeSortBU
+ - 自顶向下的归并排序
+ - 多线程归并排序
  - 快速排序 cn.diyai.sort.QuickSort
  - 冒泡排序 ccn.diyai.sort.bubblesort.BubbleSort1/BubbleSort2/BubbleSort3/BubbleSort4(优化) 4种方法
  - 选择排序 cn.diyai.sort.SelectionSort

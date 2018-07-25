@@ -1,4 +1,4 @@
-package cn.diyai.sort;
+package cn.diyai.sort.mergesort;
 
 public class MergeSort2 {
     public void Merge(int[] array, int low, int mid, int high) {

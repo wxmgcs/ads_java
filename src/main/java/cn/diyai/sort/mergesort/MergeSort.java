@@ -1,6 +1,16 @@
-package cn.diyai.sort;
+package cn.diyai.sort.mergesort;
 
-public class MergeSort {
+import cn.diyai.sort.Sort;
+import org.junit.Test;
+
+/**
+ * 对于一个int数组，请编写一个归并排序算法，对数组元素排序。
+ 给定一个int数组A及数组的大小n，请返回排序后的数组。
+ 测试样例：
+ [1,2,3,5,2,3],6
+ [1,2,2,3,3,5]
+ */
+public class MergeSort extends Sort{
     public int[] mergeSort(int[] A, int n) {
         mergeS(A, 0, A.length - 1);
         return A;
@@ -19,7 +29,9 @@ public class MergeSort {
         int left = start;
         int right = mid + 1;
         int index = 0;
+        //两段一起向右移动
         while (left <= mid && right <= end) {
+            //将两段指针较小的值存入新的数组中
             if (A[left] <= A[right]) {
                 B[index++] = A[left++];
             } else {
@@ -35,5 +47,16 @@ public class MergeSort {
         for (int i = 0; i <= end - start; i++) {
             A[start + i] = B[i];
         }
+    }
+
+
+    @Override
+    public int[] exec(int[] arr, int len) {
+        return mergeSort(arr,len);
+    }
+
+    @Test
+    public void test(){
+        super.check();
     }
 }
