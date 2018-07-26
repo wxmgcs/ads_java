@@ -113,6 +113,7 @@ Algorithms and Data Structures
            请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
 - 调整数组顺序使奇数位于偶数前面
 - 滑动窗口 cn.diyai.stack.exercise.SlideWindow
+- 统计一个数字在排序数组中出现的次数 cn.diyai.array.GetNumberOfK
 
 
 ####字符串
