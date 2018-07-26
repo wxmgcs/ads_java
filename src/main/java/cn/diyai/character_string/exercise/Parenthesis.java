@@ -1,5 +1,9 @@
 package cn.diyai.character_string.exercise;
 
+
+import org.junit.Assert;
+import org.junit.Test;
+
 /**
  * 对于一个字符串，请设计一个算法，判断其是否为一个合法的括号串。
 
@@ -26,6 +30,8 @@ public class Parenthesis {
                 num++;
             } else if (A.charAt(i) == ')') {
                 num--;
+            }else{
+                return false;
             }
             if (num < 0) {
                 return false;
@@ -33,4 +39,13 @@ public class Parenthesis {
         }
         return num == 0;
     }
+
+    @Test
+    public void test(){
+        //TODO
+        Assert.assertEquals(true,chkParenthesis( "(()())",6));
+        Assert.assertEquals(false,chkParenthesis(  "()a()()",7));
+        Assert.assertEquals(false,chkParenthesis(  "()(()()",7));
+    }
+
 }

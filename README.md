@@ -122,6 +122,8 @@ Algorithms and Data Structures
 - 字符串的排列
 - 第一个只出现一次的字符位置
 - 替换空格
+- 检测是否是一个完整的括号串 cn.diyai.character_string.exercise.Parenthesis
+- 找到第一个只出现一次的字符,并返回它的位置  cn.diyai.character_string.exercise.FirstNotRepeatingChar
 
 #### 图
 - 最小生成树
