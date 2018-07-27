@@ -11,6 +11,7 @@ Algorithms and Data Structures
 - 《剑指Offer》
 - https://github.com/XingxingHuang/Code_Practice/tree/master/nowcoder 练习题
 - http://www.cnblogs.com/jingmoxukong/p/4329079.html
+- 经典算法大全
 
 学习进度
 ####递归
@@ -165,6 +166,9 @@ Algorithms and Data Structures
 #### 算法设计技术  
 
 
+
+#### 经典算法
+- 河内之塔 cn.diyai.exercise.Hanoi
 
 #### 其他
 
