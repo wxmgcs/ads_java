@@ -1,16 +1,16 @@
 package cn.diyai.algorithmics;
 
+import junit.framework.Assert;
+import org.junit.Test;
+
 public class JumpTool {
 
-	public static void main(String[] args) {
 
-		System.out.println(JumpFloorII(1) == 1);
-		System.out.println(JumpFloorII(4) == 8);
-		System.out.println(5 % 2);
-		System.out.println(5 / 2);
-		System.out.println(JumpFloor(1));
-		System.out.println(JumpFloor(5));
-
+	@Test
+	public void test(){
+		Assert.assertEquals(true,JumpFloorII(1) == 1);
+		Assert.assertEquals(true,JumpFloorII(4) == 8);
+		Assert.assertEquals(true,JumpFloorII(5) == 16);
 	}
 
 	/**

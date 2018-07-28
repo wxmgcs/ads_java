@@ -1,7 +1,11 @@
-package cn.diyai.tree.binarysearch.exercise;
+package cn.diyai.array;
+
+import junit.framework.Assert;
+import org.junit.Test;
 
 /**
- * 对于一个有序循环数组arr，返回arr中的最小值。有序循环数组是指，有序数组左边任意长度的部分放到右边去，右边的部分拿到左边来。比如数组[1,2,3,3,4]，是有序循环数组，[4,1,2,3,3]也是。
+ * 对于一个有序循环数组arr，返回arr中的最小值。有序循环数组是指，
+ * 有序数组左边任意长度的部分放到右边去，右边的部分拿到左边来。比如数组[1,2,3,3,4]，是有序循环数组，[4,1,2,3,3]也是。
 
  给定数组arr及它的大小n，请返回最小值。
 
@@ -10,7 +14,7 @@ package cn.diyai.tree.binarysearch.exercise;
  返回：1
  */
 
-public class MinValue {
+public class MinValue2 {
     public int getMin(int[] arr, int n) {
         // write code here
         if (arr == null) {
@@ -32,5 +36,12 @@ public class MinValue {
             return arr[lo];
         }
         return arr[hi];
+    }
+
+    @Test
+    public void test(){
+        Assert.assertEquals(1,getMin(new int[]{4,1,2,3,3},5));
+        //todo
+        Assert.assertEquals(0,new int[]{});
     }
 }

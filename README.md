@@ -54,6 +54,7 @@ Algorithms and Data Structures
 - 从上往下打印二叉树
 - 对称的二叉树
 - 二叉搜索树的后序遍历序列
+- 搜索二叉树搜索错误节点 cn.diyai.tree.binarytree.exercise.FindErrorNode
 - 二叉树中和为某一值的路径
 - 按之字形顺序打印二叉树
 - 把二叉树打印成多行
@@ -62,6 +63,7 @@ Algorithms and Data Structures
 - 数据流中的中位数
 - 二叉树的深度
 - 平衡二叉树
+- 判断是否是二叉树 cn.diyai.tree.binarytree.exercise.CheckBalance
 - 重建二叉树
 - 树的子结构
 - 二叉树的镜像
@@ -75,6 +77,11 @@ Algorithms and Data Structures
 - k-d树 cn.diyai.tree.KdTree
 - 二叉搜索树 cn.diyai.tree.Treap
 - MaxTree cn.diyai.stack.exercise.MaxTree
+- 完全二叉树
+- 判断是否是完全二叉树 cn.diyai.tree.binarytree.exercise.CheckCompletion
+- 两节点最大距离 cn.diyai.tree.binarytree.exercise.LongestDistance
+- 查找最多子树 cn.diyai.tree.binarytree.exercise.MaxSubtree
+- 按层次打印二叉树  cn.diyai.tree.binarytree.exercise.TreePrinterLevelTraverse
 
 #### 栈
 - 中缀表达式转后缀表达式 cn.diyai.stack.InToPost
@@ -101,7 +108,11 @@ Algorithms and Data Structures
 
 
 ####数组
-- 数组的旋转 cn.diyai.array.ArrayHelper 
+- 查找数组中的最小值 cn.diyai.array.MinValue
+- 有序循环数组最小值 cn.diyai.array.MinValue2 
+- 分离奇偶数  cn.diyai.array.SortEvenOdd
+- 统计一个数字在排序数组中出现的次数 cn.diyai.array.GetNumberOfK
+- 查找一个整数是否在二维数组中 cn.diyai.array.FindItem
 - 数组中重复的数字
 - 构建乘积数组
 - 数组中只出现一次的数字
@@ -114,7 +125,8 @@ Algorithms and Data Structures
            请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
 - 调整数组顺序使奇数位于偶数前面
 - 滑动窗口 cn.diyai.stack.exercise.SlideWindow
-- 统计一个数字在排序数组中出现的次数 cn.diyai.array.GetNumberOfK
+- 数组中两元素求和，返回元素的位置 cn.diyai.array.TwoSum
+
 
 
 ####字符串
@@ -126,6 +138,7 @@ Algorithms and Data Structures
 - 替换空格
 - 检测是否是一个完整的括号串 cn.diyai.character_string.exercise.Parenthesis
 - 找到第一个只出现一次的字符,并返回它的位置  cn.diyai.character_string.exercise.FirstNotRepeatingChar
+- 查找重复的最长子串 cn.diyai.character_string.LengthofLongestSubstring   TODO
 
 #### 图
 - 最小生成树
@@ -134,7 +147,7 @@ Algorithms and Data Structures
 - 带权图
 
 #### 并查集ADT
-- DisjSets cn.diyai.adt.DisjSets
+- 最短路径树DisjSets cn.diyai.adt.DisjSets
 
 ####哈希表
 - 开放地址法 cn.diyai.hashtable.QuadraticProbingHashTable
@@ -163,6 +176,12 @@ Algorithms and Data Structures
  - 二分查找
 
 
+#### 位运算
+- 比较两数大小 cn.diyai.bit.exercise.Compare
+- 查找数组中出现奇数次数的数 cn.diyai.bit.exercise.OddAppearance
+- 查找数组中出现奇数次数的数的集合 cn.diyai.bit.exercise.OddAppearance2
+- 交换两个整数的值 cn.diyai.bit.exercise.Swap
+
 #### 算法设计技术  
 
 
@@ -171,6 +190,8 @@ Algorithms and Data Structures
 - 河内之塔 cn.diyai.exercise.Hanoi
 
 #### 其他
+- 青蛙跳台阶 cn.diyai.algorithmics.JumpTool
+- 
 
 图算法 
 
@@ -230,7 +251,10 @@ NP-完备性
  - 3.错误处理
  - 4.鲁棒性
 
-
+@Test
+    public void test(){
+        
+    }
 
 
 

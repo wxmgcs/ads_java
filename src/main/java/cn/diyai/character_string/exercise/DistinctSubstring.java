@@ -21,4 +21,5 @@ public class DistinctSubstring {
         }
         return max;
     }
+
 }

@@ -1,7 +1,6 @@
 package cn.diyai.bit.exercise;
 
 /**
- * Created by xing on 4/30/17.
  * 对于两个32位整数a和b，请设计一个算法返回a和b中较大的。但是不能用任何比较判断。若两数相同，返回任意一个。
 
  给定两个整数a和b，请返回较大的数。
@@ -10,6 +9,9 @@ package cn.diyai.bit.exercise;
  1,2
  返回：2
  */
+import junit.framework.Assert;
+import org.junit.Test;
+
 import java.util.*;
 
 public class Compare {
@@ -25,5 +27,29 @@ public class Compare {
         int sigc = sig(c);
         int nsigc = nsig(c);
         return a * sigc + nsigc * b;
+    }
+
+    //获取bit1的值.如果是小于0就是负数
+    public int getMax2(int a,int b){
+        if(sig((a-b))==0){
+            return b;
+        }
+        return a;
+
+    }
+
+    @Test
+    public void test(){
+        Assert.assertEquals(1,getMax(0,1));
+        Assert.assertEquals(1,getMax(1,1));
+        Assert.assertEquals(1,getMax(1,0));
+        Assert.assertEquals(10,getMax(1,10));
+        Assert.assertEquals(-1,getMax(-1,-2));
+
+        Assert.assertEquals(1,getMax2(0,1));
+        Assert.assertEquals(1,getMax2(1,1));
+        Assert.assertEquals(1,getMax2(1,0));
+        Assert.assertEquals(10,getMax2(1,10));
+        Assert.assertEquals(-1,getMax2(-1,-2));
     }
 }
