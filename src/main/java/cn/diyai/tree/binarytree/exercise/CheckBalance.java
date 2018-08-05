@@ -9,8 +9,6 @@ package cn.diyai.tree.binarytree.exercise;
 
 import cn.diyai.tree.TreeNode;
 
-import java.util.*;
-
 public class CheckBalance {
     public boolean check(TreeNode root) {
         // write code here

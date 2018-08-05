@@ -139,6 +139,7 @@ Algorithms and Data Structures
 - 检测是否是一个完整的括号串 cn.diyai.character_string.exercise.Parenthesis
 - 找到第一个只出现一次的字符,并返回它的位置  cn.diyai.character_string.exercise.FirstNotRepeatingChar
 - 查找重复的最长子串 cn.diyai.character_string.LengthofLongestSubstring   TODO
+- 转换字符串zigzag  cn.diyai.character_string.Convert
 
 #### 图
 - 最小生成树
