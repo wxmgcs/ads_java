@@ -7,8 +7,12 @@ package cn.diyai.linklist;
  */
 public class ListNode {
 
-	private int data;
-	private ListNode next;
+	protected int data;
+	protected  int val;
+	protected ListNode next;
+
+	public ListNode() {
+	}
 
 	public ListNode(int data) {
 		this.data = data;

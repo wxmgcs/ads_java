@@ -95,7 +95,7 @@ public abstract class Sort {
     }
 
     /**
-     * 是否的有序的
+     * 是否是有序的
      * @param arr
      * @return
      */
